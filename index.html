@@ -13,20 +13,15 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: white;
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         
         .container {
             text-align: center;
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            max-width: 500px;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
         
         h1 {
@@ -50,6 +45,8 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
         }
         
         button {
@@ -73,6 +70,12 @@
         button:active {
             transform: translateY(0);
         }
+        
+        /* Style for button links */
+        a.button-link {
+            text-decoration: none;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -80,7 +83,7 @@
         <h1>Deblok Helper</h1>
         
         <div class="image-container">
-            <img src="https://c10.patreonusercontent.com/4/patreon-media/p/campaign/14029592/1f894d57fd414134afcc323aceed8ed0/eyJoIjozNjAsInciOjM2MH0%3D/2.png?token-hash=hICLzqG7PjdyQJvsjVAoNMNhgNOCU8GsthJJYIVVAfo%3D&token-time=1773273600" alt="Ethereal Logo">
+            <img src="https://c10.patreonusercontent.com/4/patreon-media/p/campaign/14029592/1f894d57fd414134afcc323aceed8ed0/eyJoIjozNjAsInciOjM2MH0%3D/2.png?token-hash=hICLzqG7PjdyQJvsjVAoNMNhgNOCU8[...]" alt="Deblok Helper">
         </div>
         
         <div class="buttons-container">
@@ -89,6 +92,7 @@
             <button>Button 3</button>
             <a href="https://ethereal.mov/discord" class="button-link">
                 <button>Join the Ethereal Discord!</button>
+            </a>
         </div>
     </div>
 </body>
