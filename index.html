@@ -4,15 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deblok Helper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header img {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            color: #333;
+            font-weight: 700;
+            margin: 0;
+        }
+        
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+        }
+        
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: #667eea;
+            color: white;
+        }
+        
+        button:hover {
+            background-color: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        a.button-link {
+            text-decoration: none;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <h1>Deblok Helper</h1>
-    <img src="Ethereal Logo.png" alt="Ethereal Logo" style="width: 50px; height: auto;">
-    <div>
-        <button>Button 1</button>
-        <button>Button 2</button>
-        <button>Button 3</button>
-        <button><a href="https://discord.com/invite/your-discord-link">Join the Ethereal Discord!</a></button>
+    <div class="container">
+        <div class="header">
+            <img src="Ethereal Logo.png" alt="Ethereal Logo">
+            <h1>Deblok Helper</h1>
+        </div>
+        
+        <div class="buttons-container">
+            <button>Button 1</button>
+            <button>Button 2</button>
+            <button>Button 3</button>
+            <a href="https://ethereal.mov/discord" class="button-link">
+                <button>Join the Ethereal Discord!</button>
+            </a>
+        </div>
     </div>
 </body>
 </html>
